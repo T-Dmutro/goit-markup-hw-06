@@ -51,7 +51,38 @@
                     <use class="modal-icon" href="./img/icons.svg#close-black">
                     </use>
                 </svg></a>
-            </button></div>
+                
+
+
+            </button>
+            
+        <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
+            <h3 class="modal-form-title" >Оставьте свои данные, мы вам перезвоним</h3>
+            
+    <label class="modal-form-label" for="name">
+    Имя</label>
+    <input class="form-label" type="name" name="name" id="name" />
+  
+
+    <label class="modal-form-label" for="tel">
+    Телефон</label>
+    <input class="form-label" type="tel" name="tel" />
+    
+    <label class="modal-form-label" for="email">
+    Почта</label>
+    <input class="form-label" type="email" name="email" id="email" /> 
+    
+    <label class="modal-form-label" for="coment">
+    Комментарий 
+    <textarea class="form-label-coment" name="Комментарий" id="coment" cols="30" rows="10" placeholder="Введите текст" ></textarea>
+    </label>
+
+    <label class="form-label-check"><input  type="checkbox" name="contract" value="contract" />
+    Соглашаюсь с рассылкой и принимаю <span class="form-label-check-link"> "Условия договора"</span></label>
+    
+  <button class="bnt-modal-form" type="submit">Отправить</button>
+</form>
+        </div>
             </div>
         </section>
         <!--section peculiarity-->
@@ -428,15 +459,19 @@
                        </a>
                     </li>
                  </ul></div>
-        <!-- <div>
+        </div>
+        <div  class="letter">
             <h3 class="footer-link">Подпишитесь на рассылку</h3>
+        <div>
+            <!-- <label for="user_email">Email</label> -->
+  <input class="input-field" type="email" name="email" id="user_email" placeholder="E-mail" />
+            <button class="btn-footer">Подписаться
+                <svg class="btn-footer-svg">
+                    <use weight="24" height="24" href="./img/icons.svg#letter" > </use>
+                </svg>
+            </button>
         </div>
-        <div class="letter">
-            <label for="user_email">Email</label>
-  <input type="email" name="email" id="user_email" />
-            <button class="btn-footer">Подписаться</button>
-        </div>
-         -->
+        
       </div>
     </footer>
   </div>
