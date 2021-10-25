@@ -338,7 +338,7 @@ a.logo{
     color: var(--primary-title-color);
 }
 .modal-form-label{
-    
+    position: relative;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -349,6 +349,18 @@ a.logo{
 
     color: var(--secondary-title-color);
 }
+.modal-icon-box{
+    
+    position: absolute;
+    top:30px;
+    left: 15px;
+    z-index: 1;
+}
+.modal-icon-name{
+    /* position: absolute;
+    bottom: 0; */
+    
+}
 .modal-form{
     
     height: 500px;
@@ -358,14 +370,13 @@ a.logo{
     margin-bottom: 0;
     padding: 0 40px 40px 40px;
 }
+
 .form-label{
     display: flex;
     flex-direction: column;
     /* outline: 2px solid #2F303A; */
     margin-bottom: 10px;
-    
-}
-.form-label{
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -376,11 +387,14 @@ a.logo{
     box-sizing: border-box;
     border-radius: 4px;
     height: 40px;
+    padding-left: 42px;
     letter-spacing: 0.01em;
     width: 100%;
     color: var(--secondary-title-color);
 }
-
+.form-label:focus{
+    border: 1px solid var(--hover-effect-color);
+}
 
 .form-label-check{
     display: flex;
@@ -407,7 +421,7 @@ textarea{
     height: 60px;
     resize: none;
 }
-textarea:hover,
+/* textarea:hover, */
 textarea:focus {
   border: 1px solid var(--hover-effect-color);
 }
@@ -417,6 +431,7 @@ textarea:focus {
     width: 100%;
 }
 .form-label-coment{
+    outline: none;
 width: 100%;
 }
 .form-label-coment::placeholder{
@@ -1130,7 +1145,7 @@ margin-top: 0px;
 
 
 .btn-footer-svg{
-    border: black;
+    
     display: inline-block;
     width: 24px;
     height: 24px;
