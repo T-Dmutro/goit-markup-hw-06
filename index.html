@@ -58,29 +58,48 @@
             
         <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
             <h3 class="modal-form-title" >Оставьте свои данные, мы вам перезвоним</h3>
-            
+          
     <label class="modal-form-label" for="name">
-    Имя <svg class="modal-icon-box" style="width: 12px; height: 12px; "><use class="modal-icon-name" weight="12" height="12" href="./img/icons.svg#person-black" ></use></svg>
-    <input class="form-label" type="name" name="name" id="name" /></label>
-  
+    Имя </label> 
+    <span class="wrapper">
+    <input class="form-label" type="name" name="name" id="name"  />
+    <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#person-black" ></use></svg> 
+    </span>
 
+     
     <label class="modal-form-label" for="tel">
-    Телефон</label>
+    Телефон </label>
+    <span class="wrapper">
     <input class="form-label" type="tel" name="tel" />
+    <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#phone-black" ></use></svg>
+    </span> 
+
     
     <label class="modal-form-label" for="email">
-    Почта</label>
+    Почта </label>
+     <span class="wrapper">
     <input class="form-label" type="email" name="email" id="email" /> 
+    <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#email-black" ></use></svg>
+    </span> 
+
     
     <label class="modal-form-label" for="coment">
-    Комментарий 
-    <textarea class="form-label-coment" name="Комментарий" id="coment" cols="30" rows="10" placeholder="Введите текст" ></textarea>
-    </label>
-
-    <label class="form-label-check"><input  type="checkbox" name="contract" value="contract" required />
-    Соглашаюсь с рассылкой и принимаю <span class="form-label-check-link"> "Условия договора"</span></label>
+    Комментарий </label>
+    <span class="wrapper"> 
+    <textarea class="form-label-coment" name="Комментарий" id="coment"  placeholder="Введите текст" ></textarea>
     
-  <button class="bnt-modal-form" type="submit">Отправить</button>
+    </span> 
+    <input  type="checkbox" name="contract" value="contract" id="check" class="form-imput-check vh"  required />
+    <label for="check" class="form-label-check">
+    <span>
+        <svg class="chek-icon" style="width: 11px; height: 8px; ">
+            <use class="" weight="11" height="8" href="./img/icons.svg#check" >
+            </use>
+        </svg>
+    </span>
+    Соглашаюсь с рассылкой и принимаю 
+    <a href="">  "Условия договора" </a> </label>
+         <button class="bnt-modal-form" type="submit">Отправить</button>
 </form>
         </div>
             </div>
@@ -469,6 +488,7 @@
                 <svg class="btn-footer-svg">
                     <use weight="24" height="24" href="./img/icons.svg#letter" > </use>
                 </svg>
+            
             </button>
         </div>
         
