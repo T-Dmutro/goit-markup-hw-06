@@ -57,36 +57,44 @@
             </button>
             
         <form class="modal-form" name="signup_form" autocomplete="on" novalidate>
-            <h3 class="modal-form-title" >Оставьте свои данные, мы вам перезвоним</h3>
+            <p class="modal-form-title" >Оставьте свои данные, мы вам перезвоним</p>
           
-    <label class="modal-form-label" for="name">
+    <div class="modal-form-laabel-box">
+        <label class="modal-form-label" for="name">
     Имя </label> 
     <span class="wrapper">
     <input class="form-label" type="name" name="name" id="name"  />
     <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#person-black" ></use></svg> 
     </span>
+    </div>
 
-     
-    <label class="modal-form-label" for="tel">
+     <div class="modal-form-laabel-box">
+         <label class="modal-form-label" for="phone">
     Телефон </label>
     <span class="wrapper">
-    <input class="form-label" type="tel" name="tel" />
+    <input class="form-label" type="tel" name="tel" id="phone" />
     <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#phone-black" ></use></svg>
     </span> 
 
+     </div>
     
-    <label class="modal-form-label" for="email">
+    <div class="modal-form-laabel-box">
+        <label class="modal-form-label" for="email">
     Почта </label>
      <span class="wrapper">
     <input class="form-label" type="email" name="email" id="email" /> 
     <svg class="modal-icon-box" style="width: 18px; height: 18px; "><use class="modal-icon-name" weight="18" height="18" href="./img/icons.svg#email-black" ></use></svg>
     </span> 
 
+    </div>
     
-    <label class="modal-form-label" for="coment">
+    <div class="modal-form-laabel-box">
+        <label class="modal-form-label" for="coment">
     Комментарий </label>
     <span class="wrapper"> 
     <textarea class="form-label-coment" name="Комментарий" id="coment"  placeholder="Введите текст" ></textarea>
+    
+    </div>
     
     </span> 
     <input  type="checkbox" name="contract" value="contract" id="check" class="form-imput-check vh"  required />
@@ -483,13 +491,18 @@
             <h3 class="footer-link">Подпишитесь на рассылку</h3>
         <div>
             <!-- <label for="user_email">Email</label> -->
-  <input class="input-field" type="email" name="email" id="user_email" placeholder="E-mail" />
+            
+  <label class="footer-label">
+      <span class="foter-label-box">
+      <input class="input-field" type="email" name="email" id="user_email" placeholder="E-mail" />
             <button class="btn-footer">Подписаться
                 <svg class="btn-footer-svg">
-                    <use weight="24" height="24" href="./img/icons.svg#letter" > </use>
+                    <use weight="24" height="24" href="./img/icons.svg#letter" ></use>
                 </svg>
             
             </button>
+  </span>
+  </label>
         </div>
         
       </div>
